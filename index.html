@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Svatba Jany Turkové & Honzy Benedikta – 24. 5. 2025</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Vlastní CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Přizpůsobení Bootstrapu */
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #333;
+            background-color: #fff;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: url('https://images.unsplash.com/photo-1477511801984-4ad318ed9846?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+            position: relative;
+            color: #fff;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.3);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .timeline-item {
+            background: #f9f9f9;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .hotel-photos img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            object-fit: cover;
+            margin-bottom: 0.5rem;
+        }
+
+        .hotel-photos a:hover img {
+            outline: 2px solid #5b8c5a;
+        }
+
+        /* Responsivita pro obrázky */
+        @media (min-width: 576px) {
+            .hotel-photos img {
+                height: 100px;
+            }
+        }
+
+        /* Případné další vlastní styly */
+    </style>
+</head>
+<body>
+
+    <!-- Navigace -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Jana & Honza</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Přepnout navigaci">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#info">Informace</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#harmonogram">Harmonogram</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ubytovani">Ubytování</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#rsvp">RSVP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontakt">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Sekce -->
+    <div class="hero">
+        <div class="hero-content">
+            <h1 class="display-4">Jana Turkova & Honza Benedikt</h1>
+            <p class="lead">Svatba 24. května 2025 • Lešišov 1, 342 01 Mokrosuky-Sušice</p>
+        </div>
+    </div>
+
+    <!-- Informace -->
+    <section id="info" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Informace</h2>
+            <p class="text-center">Srdečně Vás zveme na náš svatební den, který se uskuteční <span class="text-success fw-bold">24. května 2025</span> v krásném prostředí <span class="text-success fw-bold">Lešišov 1, 342 01 Mokrosuky-Sušice</span>.</p>
+            <p class="text-center">Obřad, hostina i večerní zábava proběhnou na jednom místě. Parkování je zajištěno v areálu. Dress code není stanoven – přijďte, jak je Vám to pohodlné a milé.</p>
+            <p class="text-center">Pro ty z Vás, kteří budou chtít zůstat přes noc, jsme připravili tipy na ubytování v okolí.</p>
+        </div>
+    </section>
+
+    <!-- Harmonogram -->
+    <section id="harmonogram" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Harmonogram</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h3>10:30–11:00</h3>
+                            <p>Příjezd hostů, lehké občerstvení</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h3>11:00–11:30</h3>
+                            <p>Obřad v Lešišov 1, Mokrosuky-Sušice</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h3>11:30–12:00</h3>
+                            <p>Gratulace a společné focení</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h3>12:00–14:30</h3>
+                            <p>Svatební oběd, dort, káva</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h3>14:30–16:30</h3>
+                            <p>Volný program (procházka, fotografický koutek, hry)</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h3>16:30–18:00</h3>
+                            <p>Odpolední raut, hudba, první tanec</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h3>18:00–22:00</h3>
+                            <p>Večerní zábava, tanec, občerstvení</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h3>22:00 a dále</h3>
+                            <p>Volná zábava do pozdních hodin</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ubytování -->
+    <section id="ubytovani" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Ubytování v okolí</h2>
+            <p class="text-center mb-4">Rezervaci i platbu ubytování si hosté zajišťují sami. Klikněte na název ubytování pro více informací, nebo na obrázek pro zvětšení.</p>
+            <div class="row">
+                <!-- Penzion Pod Smrkem -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <a href="https://www.google.com/search?q=Penzion+Pod+Smrkem+Mokrosuky" target="_blank">
+                            <img src="https://images.unsplash.com/photo-1582005450369-596f439f9e5c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Penzion Pod Smrkem">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="https://www.google.com/search?q=Penzion+Pod+Smrkem+Mokrosuky" target="_blank" class="text-decoration-none text-success">Penzion Pod Smrkem</a></h5>
+                            <p class="card-text">Stylové penzion v blízkosti místa konání, cca 0,5 km.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hotel Grand Pytloun -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <a href="https://www.google.com/search?q=Hotel+Grand+Pytloun+Příbram" target="_blank">
+                            <img src="https://images.unsplash.com/photo-1602071791854-247c8fec9cee?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Hotel Grand Pytloun">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="https://www.google.com/search?q=Hotel+Grand+Pytloun+Příbram" target="_blank" class="text-decoration-none text-success">Hotel Grand Pytloun</a></h5>
+                            <p class="card-text">Luxusní hotel v Příbrami, cca 5 km.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hotel City Příbram -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <a href="https://www.google.com/search?q=Hotel+City+Příbram" target="_blank">
+                            <img src="https://images.unsplash.com/photo-1606312611026-929e080bdbf0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Hotel City Příbram">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="https://www.google.com/search?q=Hotel+City+Příbram" target="_blank" class="text-decoration-none text-success">Hotel City Příbram</a></h5>
+                            <p class="card-text">Příjemný hotel v centru Příbrami, cca 6 km.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Penzion Stezka -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <a href="https://www.google.com/search?q=Penzion+Stezka+Příbram" target="_blank">
+                            <img src="https://images.unsplash.com/photo-1602071791854-247c8fec9cee?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Penzion Stezka">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="https://www.google.com/search?q=Penzion+Stezka+Příbram" target="_blank" class="text-decoration-none text-success">Penzion Stezka</a></h5>
+                            <p class="card-text">Rodinný penzion v Příbrami, cca 7 km.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Další ubytování můžete přidat podobně -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Mapa -->
+    <section id="mapa" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Mapa</h2>
+            <div class="ratio ratio-16x9">
+                <!-- Nahraďte YOUR_GOOGLE_MAPS_EMBED_URL skutečným embed kódem z Google Maps/My Maps -->
+				<iframe style="border:none" src="https://frame.mapy.cz/s/bapajagoku" width="500" height="333" frameborder="0"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- RSVP Formulář -->
+    <section id="rsvp" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">RSVP</h2>
+            <p class="text-center mb-4">Prosíme Vás o potvrzení Vaší účasti, abychom mohli vše lépe naplánovat.</p>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form class="rsvp-form" action="https://formspree.io/f/xnnnoznw" method="POST">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Jméno a příjmení:</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-mailová adresa:</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="guests" class="form-label">Počet osob:</label>
+                            <input type="number" class="form-control" id="guests" name="guests" min="1" value="1" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="attendance" class="form-label">Účast:</label>
+                            <select class="form-select" id="attendance" name="attendance">
+                                <option value="Cely den">Celý den (obřad, hostina, večer)</option>
+                                <option value="Jen obřad">Jen obřad</option>
+                                <option value="Obřad a hostina">Obřad a hostina</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="diets" class="form-label">Dietní omezení (volitelně):</label>
+                            <textarea class="form-control" id="diets" name="diets" rows="3" placeholder="Napište nám případná dietní omezení..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-success w-100">Odeslat</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section id="kontakt" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Kontakt</h2>
+            <p class="text-center">Máte-li jakékoliv dotazy, obraťte se prosím na organizátora svatby:</p>
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center">
+                    <p><strong>E-mail:</strong> <a href="mailto:info@svatbabenediktovi.cz">info@svatbabenediktovi.cz</a></p>
+                    <p><strong>Telefon:</strong> +420 123 456 789</p>
+                    <p><strong>Web:</strong> <a href="https://svatbabenediktovi.cz" target="_blank">svatbabenediktovi.cz</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Patička -->
+    <footer class="bg-light text-center py-3">
+        © 2025 Jana Turkova & Honza Benedikt – Všechna práva vyhrazena.
+    </footer>
+
+    <!-- Bootstrap JS Bundle (včetně Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
