@@ -3,84 +3,24 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Svatba Jany Turkové & Honzy Benedikta – 24. 5. 2025</title>
+    <title>Svatba Jany Turkové & Jana Benedikta – 24. 5. 2025</title>
+    
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    
     <!-- Vlastní CSS -->
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* Přizpůsobení Bootstrapu */
-        body {
-            font-family: 'Inter', sans-serif;
-            color: #333;
-            background-color: #fff;
-        }
-
-        .hero {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            background: url('https://images.unsplash.com/photo-1477511801984-4ad318ed9846?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
-            position: relative;
-            color: #fff;
-        }
-
-        .hero::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0,0,0,0.3);
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 1;
-        }
-
-        .timeline-item {
-            background: #f9f9f9;
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .hotel-photos img {
-            width: 100%;
-            height: auto;
-            border-radius: 4px;
-            object-fit: cover;
-            margin-bottom: 0.5rem;
-        }
-
-        .hotel-photos a:hover img {
-            outline: 2px solid #5b8c5a;
-        }
-
-        /* Responsivita pro obrázky */
-        @media (min-width: 576px) {
-            .hotel-photos img {
-                height: 100px;
-            }
-        }
-
-        /* Případné další vlastní styly */
-    </style>
 </head>
 <body>
-
+    
     <!-- Navigace -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Jana & Honza</a>
+            <a class="navbar-brand" href="#">Jana & Jan</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Přepnout navigaci">
                 <span class="navbar-toggler-icon"></span>
@@ -108,10 +48,10 @@
     </nav>
 
     <!-- Hero Sekce -->
-    <div class="hero">
+    <div class="hero d-flex flex-column justify-content-center align-items-center text-center">
         <div class="hero-content">
-            <h1 class="display-4">Jana Turková & Honza Benedikt</h1>
-            <p class="lead">Svatba 24. května 2025 • Lešišov ev.č. 5, 342 01 Mokrosuky-Lešišov</p>
+            <h1 class="display-4">Jana Turková & Jan Benedikt</h1>
+            <p class="lead">Svatba 24. května 2025 • Pod šumavskou lípou</p>
         </div>
     </div>
 
@@ -133,7 +73,12 @@
                 <div class="col-md-8">
                     <div class="timeline">
                         <div class="timeline-item">
-                            <h3>10:30–11:00</h3>ev.č.5, Mokrosuky-Lešišov</p>
+                            <h3>10:30–11:00</h3>
+                            <p>Příjezd hostů, lehké občerstvení</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h3>11:00–11:30</h3>
+                            <p>Obřad pod Šumavskou lípou</p>
                         </div>
                         <div class="timeline-item">
                             <h3>11:30–12:00</h3>
@@ -229,9 +174,7 @@
         <div class="container">
             <h2 class="text-center mb-4">Mapa</h2>
             <div class="ratio ratio-16x9">
-                <!-- Nahraďte YOUR_GOOGLE_MAPS_EMBED_URL skutečným embed kódem z Google Maps/My Maps -->
-				<iframe style="border:none" src="https://frame.mapy.cz/s/bapajagoku" width="500" height="333" frameborder="0"></iframe>
-            </div>
+				<iframe style="border:none" src="https://frame.mapy.cz/s/bapajagoku" width="500" height="333" frameborder="0"></iframe>            </div>
         </div>
     </section>
 
@@ -242,7 +185,7 @@
             <p class="text-center mb-4">Prosíme Vás o potvrzení Vaší účasti, abychom mohli vše lépe naplánovat.</p>
             <div class="row justify-content-center">
                 <div class="col-md-6">
-                    <form class="rsvp-form" action="https://formspree.io/f/xnnnoznw" method="POST">
+                    <form class="rsvp-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
                         <div class="mb-3">
                             <label for="name" class="form-label">Jméno a příjmení:</label>
                             <input type="text" class="form-control" id="name" name="name" required>
@@ -259,8 +202,8 @@
                             <label for="attendance" class="form-label">Účast:</label>
                             <select class="form-select" id="attendance" name="attendance">
                                 <option value="Cely den">Celý den (obřad, hostina, večer)</option>
-                                <option value="Jen obřad">Jen obřad</option>
-                                <option value="Obřad a hostina">Obřad a hostina</option>
+                                <option value="Jen obrad">Jen obřad</option>
+                                <option value="Obrad a hostina">Obřad a hostina</option>
                             </select>
                         </div>
                         <div class="mb-3">
@@ -291,11 +234,10 @@
 
     <!-- Patička -->
     <footer class="bg-light text-center py-3">
-        © 2025 Jana Turkova & Honza Benedikt – Všechna práva vyhrazena.
+        © 2025 Jana Turkova & Jan Benedikt – Všechna práva vyhrazena.
     </footer>
 
     <!-- Bootstrap JS Bundle (včetně Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-

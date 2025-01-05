@@ -1,0 +1,137 @@
+/* Vlastní styly */
+
+/* Importování fontů (pokud potřebujete více kontrolovat, můžete toto odstranit, protože fonty jsou již zahrnuty v HTML) */
+body {
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    background-color: #fff;
+}
+
+/* Hero Sekce */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url('images/hero.jpg') center/cover no-repeat;
+    position: relative;
+    color: #fff;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.3);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+/* Harmonogram */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.timeline-item {
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.timeline-item h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.timeline-item p {
+    margin: 0.5rem 0 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Ubytování */
+.hotel-photos img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+}
+
+.hotel-photos a:hover img {
+    outline: 2px solid #5b8c5a;
+}
+
+/* Responsivita pro obrázky */
+@media (min-width: 576px) {
+    .hotel-photos img {
+        height: 100px;
+    }
+}
+
+/* RSVP Formulář */
+.rsvp-form {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.rsvp-form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.rsvp-form input, 
+.rsvp-form select, 
+.rsvp-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.rsvp-form button {
+    background: #5b8c5a;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.rsvp-form button:hover {
+    background: #4a7449;
+}
+
+/* Kontakt */
+.contact p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Patička */
+footer {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.85rem;
+    color: #999;
+}
