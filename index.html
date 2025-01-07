@@ -179,7 +179,7 @@
                 <div class="col-md-6">
                     <form class="rsvp-form" action="https://formsubmit.co/benjar.1993@gmail.com" method="POST">
                         <div class="mb-3">
-                            <label for="name" class="form-label">Jméno a příjmení:</label>
+                            <label for="name" class="form-label">Jméno:</label>
                             <input type="text" class="form-control" id="name" name="name" required>
                         </div>
                         <div class="mb-3">
@@ -191,17 +191,17 @@
                             <input type="number" class="form-control" id="guests" name="guests" min="1" value="1" required>
                         </div>
                         <div class="mb-3">
-                            <label for="attendance" class="form-label">Účast:</label>
+                            <label for="attendance" class="form-label">Přespím:</label>
                             <select class="form-select" id="attendance" name="attendance">
-                                <option value="Cely den">Celý den (obřad, hostina, večer)</option>
-                                <option value="Jen obrad">Jen obřad</option>
-                                <option value="Obrad a hostina">Obřad a hostina</option>
+                                <option value="Cely den">Ano, přespím na hotelu v okolí</option>
+                                <option value="Jen obrad">Ne, pojedu domů</option>
                             </select>
                         </div>
                         <div class="mb-3">
-                            <label for="diets" class="form-label">Dietní omezení (volitelně):</label>
-                            <textarea class="form-control" id="diets" name="diets" rows="3" placeholder="Napište nám případná dietní omezení..."></textarea>
+                            <label for="notes" class="form-label">Poznámky (volitelně):</label>
+                            <textarea class="form-control" id="diets" name="diets" rows="3" placeholder="Napište nám ..."></textarea>
                         </div>
+						<input type="hidden" name="_next" value="https://benedjan.github.io/SvatbaBenediktovi/dekujeme.html">
                         <button type="submit" class="btn btn-success w-100">Odeslat</button>
                     </form>
                 </div>
