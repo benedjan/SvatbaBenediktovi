@@ -9,10 +9,10 @@ body {
 
 /* Hero Sekce */
 .hero {
-    height: 100vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     text-align: center;
     background: url('images/hero.jpg') center/cover no-repeat;
@@ -33,6 +33,12 @@ body {
 .hero-content {
     position: relative;
     z-index: 1;
+	margin-top: -20vh;
+}
+
+.hero-content h1 {
+	font-size: 4rem;
+	font-weight:bold;
 }
 
 /* Harmonogram */
