@@ -14,6 +14,7 @@
     
     <!-- Vlastní CSS -->
     <link rel="stylesheet" href="style.css">
+	<link href="css/lightbox.css" rel="stylesheet" />
 </head>
 <body>
     
@@ -124,7 +125,7 @@
                 <div class="col-md-6 col-lg-4 mb-4">
                     <div class="card h-100">
                         <a href="https://www.ztracenka.com/" target="_blank">
-                            <img src="images/ztracenka.jpg" class="card-img-top" alt="Penzion Ztracenka">
+                            <img src="images/ztracenka.webp" class="card-img-top" alt="Penzion Ztracenka">
                         </a>
                         <div class="card-body">
                             <h5 class="card-title"><a href="https://www.ztracenka.com/" target="_blank" class="text-decoration-none text-success">Penzion Ztracenka</a></h5>
@@ -136,7 +137,7 @@
                 <div class="col-md-6 col-lg-4 mb-4">
                     <div class="card h-100">
                         <a href="https://www.uluhanu.cz/cenik-u-luhanu-hotel-a-hostinec-u-luhanu-petrovice-u-susice" target="_blank">
-                            <img src="images/uluhanu.jpg" class="card-img-top" alt="Hotel u Luhanů">
+                            <img src="images/uluhanu.webp" class="card-img-top" alt="Hotel u Luhanů">
                         </a>
                         <div class="card-body">
                             <h5 class="card-title"><a href="https://www.uluhanu.cz/cenik-u-luhanu-hotel-a-hostinec-u-luhanu-petrovice-u-susice" target="_blank" class="text-decoration-none text-success">Hotel U Luhanů</a></h5>
@@ -148,7 +149,7 @@
                 <div class="col-md-6 col-lg-4 mb-4">
                     <div class="card h-100">
                         <a href="https://www.zamekmokrosuky.cz/ubytov%C3%A1n%C3%AD" target="_blank">
-                            <img src="images/zamek_mokrosuky.png" class="card-img-top" alt="Zámek Mokrosuky">
+                            <img src="images/zamek_mokrosuky.webp" class="card-img-top" alt="Zámek Mokrosuky">
                         </a>
                         <div class="card-body">
                             <h5 class="card-title"><a href="https://www.zamekmokrosuky.cz/ubytov%C3%A1n%C3%AD" target="_blank" class="text-decoration-none text-success">Zámek Mokrosuky</a></h5>
@@ -164,17 +165,31 @@
     <!-- Mapa -->
     <section id="mapa" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-4">Mapa</h2>
+            <h2 class="text-center mb-4">Jak se za námi dostanete?</h2>
+			<p class="text-center">Veselí se bude odehrávat Pod šumavskou lípou, Lešišov. Parkování je zajištěno na místě (odbočka nad místem konání), zavedou vás ukazatele.</p>
+			<p class="text-center">Pro dobrodružné povahy je možné na přilehlých lukách rozložit stanové městečko či přespat v autě.</p>
+
             <div class="ratio ratio-16x9">
-				<iframe style="border:none" src="https://frame.mapy.cz/s/bapajagoku" width="500" height="333" frameborder="0"></iframe>            </div>
+				<iframe style="border:none" src="https://frame.mapy.cz/s/bapajagoku" width="500" height="333" frameborder="0"></iframe>
+			</div>
+			<div class="gallery">
+				<a href="images/podlipou2.webp" data-lightbox="roadtrip" data-title="Pod šumavskou lípou 1">
+					<img src="images/podlipou2.webp" alt="Pod šumavskou lípou 1">
+				</a>
+				<a href="images/podlipou1.webp" data-lightbox="roadtrip" data-title="Pod šumavskou lípou 2">
+					<img src="images/podlipou1.webp" alt="Pod šumavskou lípou 2">
+				</a>
+			</div>
         </div>
     </section>
 
     <!-- Formulář Formulář -->
     <section id="rsvp" class="bg-light py-5">
         <div class="container">
-            <h2 class="text-center mb-4">Formulář</h2>
+            <h2 class="text-center mb-4">Potvrzení účasti</h2>
             <p class="text-center mb-4">Prosíme Vás o potvrzení Vaší účasti, abychom mohli vše lépe naplánovat.</p>
+            <p class="text-center mb-4">Velmi si vážíme, že s námi plánujete prožít náš svatební den. Rádi bychom vás však požádali, abyste zvážili účast vašich dětí. V areálu se nachází rybník a svažitý terén, což by pro ty nejmenší mohlo být nebezpečné. Pokud máte možnost, prosím, svěřte děti do péče babiček nebo tetiček. Děkujeme za pochopení a těšíme se na krásné chvíle strávené společně.</p>
+
             <div class="row justify-content-center">
                 <div class="col-md-6">
                     <form class="rsvp-form" action="https://formsubmit.co/benjar.1993@gmail.com" method="POST">
@@ -187,7 +202,7 @@
                             <input type="email" class="form-control" id="email" name="email" required>
                         </div>
                         <div class="mb-3">
-                            <label for="guests" class="form-label">Počet osob:</label>
+                            <label for="guests" class="form-label">Počet osob (včetně dětí):</label>
                             <input type="number" class="form-control" id="guests" name="guests" min="1" value="1" required>
                         </div>
                         <div class="mb-3">
@@ -230,5 +245,6 @@
 
     <!-- Bootstrap JS Bundle (včetně Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="js/lightbox-plus-jquery.js"></script>
 </body>
 </html>
