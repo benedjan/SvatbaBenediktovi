@@ -40,30 +40,32 @@ body {
 	font-size: 4rem;
 	font-weight:bold;
 }
-/* Galerie */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responzivní rozvržení */
-  gap: 16px; /* Mezery mezi obrázky */
-}
 
 /* Obrázky v galerii */
-.gallery img {
-  width: 50%; /* Obrázek vyplní šířku kontejneru */
-  height: 150px; /* Pevná výška pro čtvercový tvar */
-  object-fit: cover; /* Ořízne obrázek tak, aby pokryl kontejner */
-  border-radius: 12px; /* Zaoblené rohy */
-  border: 2px solid #f0f0f0; /* Světle šedý rámeček */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lehký stín */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efekt při najetí */
-}
+/* Galerie */
+        .gallery {
+            display: flex; /* Použití Flexboxu */
+            justify-content: center; /* Zarovnání na střed */
+            gap: 8px; /* Mezery mezi obrázky */
+            flex-wrap: wrap; /* Obrázky na další řádek, pokud není místo */
+            margin: 20px auto; /* Vycentrování galerie */
+            max-width: 80%; /* Maximalní šířka galerie */
+        }
 
-/* Hover efekt */
-.gallery img:hover {
-  transform: scale(1.05); /* Mírné přiblížení při najetí */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Zvýrazněný stín */
-}
+        .gallery img {
+            width: 300px; /* Pevná šířka pro čtvercový vzhled */
+            height: 300px; /* Pevná výška pro čtvercový vzhled */
+            object-fit: cover; /* Obrázek pokryje kontejner */
+            border-radius: 12px; /* Zaoblené rohy */
+            border: 2px solid #f0f0f0; /* Světle šedý rámeček */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lehký stín */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efekty při najetí */
+        }
 
+        .gallery img:hover {
+            transform: scale(1.05); /* Mírné zvětšení */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Zvýrazněný stín */
+        }
 
 /* Harmonogram */
 .timeline-1 {
