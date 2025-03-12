@@ -16,7 +16,7 @@ body {
     align-items: center;
     text-align: center;
     padding: 10vh 10px 0;
-    background: url('images/hero.jpg') center/cover no-repeat;
+    background: url('images/hero2.webp') center/cover no-repeat;
     position: relative;
     color: #fff;
 }
@@ -42,11 +42,30 @@ body {
 	font-weight:bold;
 }
 /* Kontejner galerie */
-.gallery {
-  display: grid;
-  /*grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responzivní sloupce */
-  /*gap: 16px; /* Mezery mezi náhledy */
-}
+/* Styl galerie */
+        .gallery {
+            display: flex; /* Použití Flexboxu */
+            justify-content: center; /* Zarovnání na střed */
+            gap: 8px; /* Mezery mezi obrázky */
+            flex-wrap: wrap; /* Obrázky na další řádek, pokud není místo */
+            margin: 20px auto; /* Vycentrování galerie */
+            max-width: 80%; /* Maximalní šířka galerie */
+        }
+
+        .gallery img {
+            width: 300px; /* Pevná šířka pro čtvercový vzhled */
+            height: 300px; /* Pevná výška pro čtvercový vzhled */
+            object-fit: cover; /* Obrázek pokryje kontejner */
+            border-radius: 12px; /* Zaoblené rohy */
+            border: 2px solid #f0f0f0; /* Světle šedý rámeček */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lehký stín */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efekty při najetí */
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05); /* Mírné zvětšení */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Zvýrazněný stín */
+        }
 
 /* Náhledový obrázek */
 .gallery img {
