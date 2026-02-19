@@ -67,23 +67,6 @@ body {
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Zvýrazněný stín */
         }
 
-/* Náhledový obrázek */
-.gallery img {
-  /*width: 100%; /* Obrázek vyplní kontejner */
-  height: auto; /* Zachová poměr stran */
-  border-radius: 12px; /* Zaoblené rohy */
-  border: 2px solid #f0f0f0; /* Světle šedý rámeček */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lehký stín */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efekt při najetí */
-}
-
-/* Hover efekt */
-.gallery img:hover {
-  transform: scale(1.05); /* Mírné přiblížení */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Zvýrazněný stín */
-  /*border-color: #ffc0cb; /* Jemná pastelová růžová */
-}
-
 /* Harmonogram */
 .timeline-1 {
   border-left: 3px solid #006400;
@@ -163,7 +146,6 @@ body {
   .timeline-1 .event:after {
     left: -31.8px;
   }
-}
 }
 /* Ubytování */
 .hotel-photos img {
